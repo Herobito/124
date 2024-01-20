@@ -1,0 +1,310 @@
+/* Importando la tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto&display=swap");
+
+/* Estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Estilos para h2 */
+h2 {
+  font-size: 1.25rem;
+}
+
+/* Estilos para h3 */
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Estilos para parrafos */
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Inicia header */
+
+/* Estilos portada */
+.portada {
+  padding: 20px;
+  margin: 20px;
+  background-image: url( https://drive.google.com/uc?export=view&id=1sMUo1Nghx2oADdF9-b8mRjvGgJqXIkta);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 420px;
+}
+
+/* Termina header */
+
+/* Inicia galería */
+
+/* Estilos para los artículos */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(219, 222, 227, 0.5);
+  width: 100%;
+  min-height: 810px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.galeria-info{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(219, 222, 227, 0.5);
+  width: 100%;
+  min-height: 810px;
+  align-items: center;
+  padding-bottom: 100px;
+ 
+}
+
+/* Estilos para h2 */
+.galeria > h2 {
+  margin-top: 150px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Estilos para linea */
+.linea-galeria {
+  border-top: 2px #707070 solid;
+  width: 76px;
+  margin-bottom: 65px;
+}
+
+/* Estilos para cuadros */
+.carro {
+  height: 380px;
+  max-width: 290px;
+  background-color: #FFFFFF;
+  box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.14);
+}
+
+/* Estilos para las imagenes */
+.carro > img {
+  width: 100%;
+}
+
+/* Estilos para espacio bajo las imagenes */
+.cuadros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 35px;
+  column-gap: 35px;
+  row-gap: 45px;
+  justify-content: center;
+}
+
+/* Estilos para lineas de los cuadros*/
+.linea-carro {
+  border-bottom: 2px #707070 solid;
+  width: 40px;
+  margin: 50px auto 25px auto;
+}
+
+/* Estilos para h3 los cuadros*/
+.carro > h3 {
+  margin: auto 25px auto 25px;
+  font-size: 1.125rem;
+}
+
+/* Estilos para seccion queines somos*/
+
+.quienes-somos{
+  text-align: justify;
+  font-size: 22px;
+  width: 90%;
+}
+
+/* Termina galería */
+
+
+/* Inicia formulario */
+
+.formulario{
+  background-color: rgba(219, 222, 227, 0.5);
+}
+
+.formulario .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.formulario .texto-formulario{
+  text-align: center;
+  color: black;
+  padding-bottom: 70px;
+  margin: 0px auto;
+}
+
+.texto-formulario h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+}
+
+.texto-formulario h2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+/* media query*/
+@media all and (max-width: 1000px) {
+  .container-textos-nosotros {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* estilos historial */
+.historial {
+  background-color: rgba(219, 222, 227, 0.5);
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+}
+
+/* estilos contenedor */
+.container-historial {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  
+}
+
+/* estilos para h3 */
+.container-historial > h3 {
+  margin: 20px 0 25px 0;
+  font-size: 1.125rem;
+  margin-bottom: 1px;
+}
+
+/* estilos formulario */
+form {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+/* estilos input */
+input {
+  box-sizing: border-box;
+  padding: 0 25px 0 25px;
+}
+/* estilos espacios formulario */
+.ventas {
+  box-sizing: border-box;
+  max-width: 450px;
+  width: 90%;
+  height: 50px;
+  padding: 0 0 0 25px;
+  background-color: transparent;
+  border: 3.5px #FFFFFF solid;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* estilos espacios formulario */
+option{
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #7e8797;
+}
+
+/* estilos botón */
+.boton-enviar {
+  box-sizing: border-box;
+  border: 2px #3c3b28 solid;
+  padding: 10px 23px 8px 23px;
+  background-color: transparent;
+  margin-top: 25px;
+}
+
+/* Termina Formulario*/
+
+/* Inicia footer */
+
+/* Estilos derechos */
+.derechos {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 135px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+/* Estilos contenedor de redes */
+.container-redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+}
+
+/* Media query */
+@media all and (max-width: 1000px) {
+  .derechos {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 135px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    row-gap: 25px;
+  }
+}
+
+/* Termina footer */
+
+/* Estilos para paginas que muestran mensajes */
+
+.galeria-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(219, 222, 227, 0.5);
+  width: 100%;
+  min-height: 810px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+/* Estilos para h2 */
+.galeria-2 > h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+hola
